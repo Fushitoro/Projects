@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-kerning: none;
+    font-variant: traditional;
+    font-family: 'DM Sans';
+}
+
+:root {
+    --primary: #000000;
+    --primary-dark: #000000;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffc966 0%, #fe8989 100%);
+}
+
+.container {
+    backdrop-filter: blur(12px);
+}
+
+.login-container {
+    background: #ffffffcc;
+    padding: 3rem 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .15);
+    width: min(90vw, 400px);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #444;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .25rem;
+    font-size: .9rem;
+}
+
+input {
+    width: 100%;
+    padding: .75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+    transition: border-color .3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+button {
+    width: 100%;
+    padding: .75rem;
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    background: var(--primary);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .3s, transform .2s;
+}
+
+button:hover {
+    background: var(--primary-dark);
+}
+
+button:active {
+    transform: scale(.97);
+}
+
+.login-container p {
+    text-align: center;
+    font-size: .9rem;
+    margin-top: 1rem;
+}
+
+.login-container a {
+    color: var(--primary-dark);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media(max-width:500px) {
+    .login-container {
+        padding: 2rem;
+    }
+}

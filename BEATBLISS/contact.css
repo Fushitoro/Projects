@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-kerning: none;
+  font-variant: traditional;
+  font-family: 'DM Sans';
+}
+
+#contactus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fff8f0;
+}
+
+.container7 {
+  width: 95%;
+  max-width: 600px;
+  background-color: #eed9c0;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.utl {
+  text-align: center;
+  color: #ef5025;
+  font-size: 35px;
+}
+
+form input,
+form textarea {
+  width: 95%;
+  padding: 12px;
+  margin: 10px 15px;
+  background: #333;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px;
+  background: #ef7a2c;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin: auto;
+}
+
+.visit {
+  text-align: center;
+
+}
+
+.map-container {
+  margin: 20px 15px;
+  width: 95%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#successMsg {
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+}
