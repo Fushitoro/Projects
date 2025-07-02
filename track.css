@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-kerning: none;
+  font-variant: traditional;
+  font-family: 'DM Sans';
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.order-card {
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-id {
+  font-weight: 600;
+}
+
+.status {
+  padding: 5px 12px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status.Pending {
+  background: #ffcc00;
+  color: #000;
+}
+
+.status.Shipped {
+  background: #00cfff;
+  color: #fff;
+}
+
+.status.Delivered {
+  background: #28a745;
+  color: #fff;
+}
+
+.status.Rejected {
+  background: #dc3545;
+  color: #fff;
+}
+
+.order-items {
+  margin-top: 15px;
+  display: none;
+}
+
+.order-items.show {
+  display: block;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.item img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.item-info {
+  flex-grow: 1;
+}
+
+.toggle-details {
+  background: transparent;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  font-size: 14px;
+}
+
+#refreshStatus {
+  background: linear-gradient(45deg, #ff6f61, #de4313);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 20px auto 0;
+  display: block;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+#refreshStatus:hover {
+  transform: scale(1.05);
+}
+
+.back-to-cart {
+  display: inline-block;
+  margin: 20px auto 0;
+  padding: 12px 24px;
+  background: #222;
+  color: white;
+  text-align: center;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.back-to-cart:hover {
+  background: #444;
+  transform: scale(1.05);
+}

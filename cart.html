@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BEATBLISS | Cart Page</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+
+<body>
+  <h1 class="utillity">YOUR CART</h1>
+  <div id="cart-list"></div>
+  <h3 id="total" style="text-align:center;"></h3>
+
+  <div class="button-group">
+    <button class="back-btn" onclick="window.location.href='prod.html'">⬅ Back to Products</button>
+    <button id="buy-now">Buy Now</button>
+    <button id="track-order" onclick="window.location.href='track_order.html'">Track Orders</button>
+  </div>
+
+  <div id="toast-container"></div>
+  <script src="cart.js"></script>
+</body>
+</html>

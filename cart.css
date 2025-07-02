@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-kerning: none;
+  font-variant: traditional;
+  font-family: 'DM Sans';
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 0;
+}
+
+.utillity {
+  text-align: center;
+  font-size: 38px;
+  margin: 40px 0 20px;
+  color: #3a3a3a;
+  text-shadow: 2px 2px 5px #ccc;
+}
+
+#cart-list {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.cart-item {
+  background-color: #ffe7d1;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+button.remove {
+  padding: 6px 12px;
+  margin-left: 10px;
+  background: crimson;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+button.remove:hover {
+  background: darkred;
+}
+
+.button-group {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.button-group button {
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.button-group button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+button#buy-now {
+  background: linear-gradient(45deg, #6a5acd, #836fff);
+  color: #fff;
+}
+
+button#track-order {
+  background: linear-gradient(45deg, #43cea2, #185a9d);
+  color: #fff;
+}
+
+button.back-btn {
+  background: linear-gradient(45deg, #ff6f61, #de4313);
+  color: #fff;
+}
+
+#toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.toast {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  color: #222;
+  padding: 14px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s;
+  min-width: 220px;
+  font-weight: bold;
+  border-left: 6px solid #ff6f61;
+}
